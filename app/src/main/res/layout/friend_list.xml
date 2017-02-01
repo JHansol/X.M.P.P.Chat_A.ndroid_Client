@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:id="@+id/im111111"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRIEND"
+            android:textSize="18dp"
+            android:id="@+id/friend"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/im1zzz"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/im111111">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="친구 추가할 아이디"
+            android:textSize="20dp"
+            android:layout_below="@+id/friend"
+            android:layout_alignStart="@+id/friend"
+            android:layout_marginTop="15dp"
+            android:id="@+id/newfriendet"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:inputType="text"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="추가"
+            android:textSize="15dp"
+            android:layout_below="@+id/setting"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/newfriendbt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/im1zzz" />
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/container3"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/im1zzz" >-->
+
+        <!--<fragment-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/customlistfragment"-->
+            <!--android:name="com.example.han.myapplication001.XMPP.Fragment1"-->
+            <!--tools:layout="@layout/friend_list_chatlist" />-->
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/list"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/im1zzz" />-->
+
+<!--</LinearLayout>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTING"
+        android:textSize="18dp"
+        android:id="@+id/setting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHAT"
+        android:textSize="18dp"
+        android:id="@+id/chat"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+

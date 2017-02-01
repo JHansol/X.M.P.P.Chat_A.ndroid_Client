@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/Profile_image_2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="New Text"
+            android:id="@+id/title_2"
+            android:textSize = "20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="#fbebeb" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/material_grey_100"
+            android:weightSum="1">
+        <TextView
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="New Text"
+            android:id="@+id/title2_2"
+            android:textSize = "15dp"
+            android:textColor="#838383"
+            android:gravity="center_vertical|fill_vertical"
+            android:textStyle="normal|italic"
+            android:typeface="monospace"
+            android:paddingLeft="15dp"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:maxLength="40"
+            android:lines="2" />
+            <TextView
+                android:layout_weight="0.85"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="9"
+                android:id="@+id/title2_3"
+                android:textSize = "17dp"
+                android:textStyle="bold"
+                android:gravity="fill_vertical|center_horizontal"
+                android:textColor="#febebe"
+                android:singleLine="true"
+                android:textIsSelectable="false" />
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
